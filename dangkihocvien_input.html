@@ -4,8 +4,21 @@
   <meta charset="UTF-8">
   <title>dangkihocvien_input</title>
   <style>
+    fieldset {
+     background-color: darksalmon;
+      width: 500px;
+      font-size: 20px;
+    }
+    legend {
+      color: darkblue;
+      font-size: 30px;
+    }
     p {
       float: left;
+    }
+    button {
+      width: 70px;
+      height: 40px;
     }
   </style>
 </head>
@@ -13,32 +26,36 @@
 <form method="post" action="http://localhost">
   <fieldset>
     <legend>Đăng kí học viên</legend>
-    <label for="fname">Họ và tên</label>
-    <input type="text" name="full name" id="fname" required/><br>
+    <label for="fname">Họ và tên&nbsp;</label>
+      <input type="text" name="full name" id="fname" required/><br>
     <label for="birthday">Ngày sinh</label>
     <input type="date" name="birthday" id="birthday"/>
     <br><br>
-    Giới tính
-    <input type="radio" name="Male" id="Male" value="Male" checked>
-    <label for="Male">Nam</label>
-    <input type="radio" name="Female" id="Female" value="Male">
-    <label for="Female">Nữ</label>
+   <div> Giới tính
+     <input type="radio" id="male" name="gioitinh" value="male" checked>
+     <label for="male">Nam</label>
+     <input type="radio" id="female" name="gioitinh" value="female">
+     <label for="female">Nữ</label>
+   </div>
     <br><br>
-    <p>Địa chỉ</p>
+    <p>Địa chỉ&emsp;&ensp;</p>
     <label for="adress"></label>
-    <input style="width: 300px; height: 100px" type="text" name="Adress" id="adress"><br>
-    <label for="class"> Lớp: </label>
+    <input style="width: 300px; height: 100px" type="text" name="Adress" id="adress"/><br>
+    <label for="class"> Lớp&emsp;&emsp;&ensp; </label>
     <select name="Lớp" id="class">
       <option>Lớp A</option>
       <option>Lớp D</option>
       <option>Lớp E</option>
     </select>
     <br>
-    <label for="email">Email</label>
-    <input type="email" name="mail" id="email" required>
+    <label for="email">Email&emsp;&ensp;&nbsp;  </label>
+    <input type="email" name="mail" id="email" required/>
     <br>
     <label for="phone">Điện thoại</label>
-    <input type="text" name="phonenumber" id="phone">
+    <input type="text" name="phonenumber" id="phone"/>
+    <br><br>
+    <button type="submit">Đăng kí</button>
+    <button type="reset">Nhập lại</button>
   </fieldset>
  </form>
 </body>
