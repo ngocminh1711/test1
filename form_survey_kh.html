@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>form_survey_kh</title>
+  <style>
+    table{
+      width: 600px;
+      height: 100px;
+    }
+  </style>
 </head>
 <body>
 <form action="" method="post">
@@ -50,7 +56,53 @@
     <input type="radio" name="days" id="weekly" value="weekly">Weekly<br>
     <label for="weekly"></label>
     <input type="radio" name="days" id="monthly" value="monthly">Monthly<br>
-    <label for="monthly"></label>
+    <label for="monthly"></label><br>
+  </div>
+      <h3> What would you pay for new product? </h3>
+      <label for="dollars" >$</label>
+      <input type="text" name="dollars" id="dollars">
+      <label for="cents" style="width: 100px;">.</label>
+      <input type="text" name="cents" id="cents" style="width: 20px;">
+  <p>&ensp;Dollars&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Cents</p>
+  <br>
+  <h3>What features would you like to see in the new product.</h3>
+  <label for="snprod"></label>
+  <input type="text" name="seenewproduct" id="snprod" style="width: 800px; height: 200px"/>
+  <p>Please rate your level of agreement with the following statments.</p>
+  <table border="1">
+    <tr>
+      <th></th>
+      <th> Strongly Disagree </th>
+      <th> Disagree </th>
+      <th> Agree </th>
+      <th> Stronggly Agree </th>
+    </tr>
+    <tr>
+      <td> Our products are priced fairly. </td>
+      <td> <input type="radio" name="priced fairly" id="sd" value="sd"> <label for="sd">1</label> </td>
+      <td> <input type="radio" name="priced fairly" id="da" value="da"> <label for="da">2</label> </td>
+      <td> <input type="radio" name="priced fairly" id="a" value="a"> <label for="a">3</label> </td>
+      <td> <input type="radio" name="priced fairly" id="sa" value="sa"> <label for="sa">4</label> </td>
+    </tr>
+    <tr>
+      <td> Our products are high quality.</td>
+      <td> <input type="radio" name="high quality" id="sd1" value="sd1"> <label for="sd1">1</label> </td>
+      <td> <input type="radio" name="high quality" id="da1" value="da1"> <label for="da1">2</label> </td>
+      <td> <input type="radio" name="high quality" id="a1" value="a1"> <label for="a1">3</label> </td>
+      <td> <input type="radio" name="high quality" id="sa1" value="sa1"> <label for="sa1">4</label> </td>
+    </tr>
+    <tr>
+      <td> You would recommend our product to a friend or coworked.</td>
+      <td> <input type="radio" name="recommend" id="sd2" value="sd2"> <label for="sd2">1</label> </td>
+      <td> <input type="radio" name="recommend" id="da2" value="da2"> <label for="da2">2</label> </td>
+      <td> <input type="radio" name="recommende" id="a2" value="a2"> <label for="a2">3</label> </td>
+      <td> <input type="radio" name="recommend" id="sa2" value="sa2"> <label for="sa2">4</label> </td>
+    </tr>
+  </table>
+
+
+
+
 </form>
 </body>
 </html>
