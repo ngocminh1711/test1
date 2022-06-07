@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>onchange</title>
+</head>
+<body>
+<p> select new car</p>
+<select id="mySelect">
+  <option> bmw</option>
+  <option> mercedes</option>
+  <option> audi </option>
+</select>
+<script>
+  var selectedElement = document.getElementById("mySelect");
+  selectedElement.addEventListener("change",changeFunction);
+  function changeFunction(){
+    var selecteValue = document.getElementById("mySelect").value;
+    alert(selecteValue)
+  }
+</script>
+
+</body>
+</html>
+,
