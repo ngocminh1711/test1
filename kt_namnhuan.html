@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>namnhuan</title>
+</head>
+<body>
+<script>
+   let year = parseInt(prompt("Nhập số năm "));
+   let namnh = false;
+   let chiacho4 = year % 4 === 0;
+    if (chiacho4) {
+      let chiacho100 = year % 100 === 0;
+      if (chiacho100) {
+        let chiacho400 = year % 400 === 0;
+        if (chiacho400) {
+          namnh = true;
+        }
+      } else {
+        namnh = true;
+      }
+      if (namnh) {
+        alert( year +" là năm nhuận ")
+      }
+    }
+    else
+      alert( year + " là năm không thèm nhuận")
+</script>
+
+</body>
+</html>
