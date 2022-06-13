@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>thuchanh_sdvonglap</title>
+</head>
+<body>
+  <script>
+    let num = parseInt(prompt("Enter your number: "));
+    let total = 0
+    for (i = 1;i <= num;i = i + 1) {
+      total = total + 1;
+      alert(total);
+    }
+  </script>
+  <h1> Vong Lap</h1>
+  <p id= "for" > </p>
+  <script>
+  let i;
+  let text ="";
+  for (i=0; i<10;i++) {
+    text+= "The number is " + i + "<br>";
+  }
+  document.getElementById("for").innerHTML= text;
+</script>
+
+</body>
+</html>
