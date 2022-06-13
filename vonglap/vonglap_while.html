@@ -6,21 +6,17 @@
 </head>
 <body>
 <script>
-  let num = parseInt(prompt("Enter the number: "));
-  let total = 0;
-  while (num !== -1) {
-    num = parseInt(prompt("Enter the number: "));
-    alert(num);
-    total += num;
+  let bang;
+  bang = "<table border= '1' width = '300' cellpadding = '3'>"
+  for (i = 2 ;i <= 9 ;i++) {
+    bang = bang + "<tr>"
+    for (j = 1; j <= 9; j++){
+      bang = bang + "<td>" + i +'x' +j +'=' + i * j + "</td>";
+    }
+    bang = bang + "</tr>";
   }
-  alert(total);
-</script>
-<script>
-  let i = 1;
-  while (i < 100) {
-    document.write("<hr width= " + i + "%>");
-    i ++;
-  }
+  bang = bang + "</table>";
+  document.write(bang)
 </script>
 </body>
 </html>

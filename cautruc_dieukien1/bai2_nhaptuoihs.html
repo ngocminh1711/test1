@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>tinh_tuoi_hocsinh_lop10</title>
+</head>
+<body>
+<h1> Điều kiện vào lớp 10</h1>
+<input  type="number" id="age" style="width: 30px">
+<label for="age" > Tuổi</label>
+<button onclick="sum()">Kết quả</button>
+<p id="result"></p>
+<script>
+  function sum(){
+
+
+  let age = +document.getElementById('age').value;
+  if (age <16){
+    document.getElementById('result').innerHTML = "Không được vào lớp 10";
+  }
+  else {
+    document.getElementById('result').innerHTML= "Được vào lớp 10";
+  }
+  }
+</script>
+</body>
+</html>
