@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>tinhsodien</title>
 </head>
 <body>
-$END$
+<h2> Tính lượng điện tiêu thụ </h2>
+<input name="ld" id="ld" type="number">
+<label for="ld" >KWh</label><br><br>
+<button type="button" onclick="sum()" value="">Kết quả</button>
+<p id="result"> Số tiền cần trả: </p>
+<p id="result1"> Bạn đang ở bậc: </p>
+<script>
+  function sum() {
+    let ld = +document.getElementById('ld').value;
+    if (ld > 0 && ld <= 50) {
+      a = ld * 1600
+      document.getElementById('result').innerHTML = " Số tiền cần trả: " + a;
+      document.getElementById('result1').innerHTML = " Bạn đang ở bậc 1"
+    }
+     else if (ld <= 100) {
+      a = (50 * 1600) + (ld - 50) * 1700
+      document.getElementById('result').innerHTML = " Số tiền cần trả: " + a;
+      document.getElementById('result1').innerHTML = " Bạn đang ở bậc 2"
+    }
+     else if (ld> 100 && ld <= 200) {
+      a = (50 * 1600) + (50 * 1700) + (ld - 100) * 2000
+      document.getElementById('result').innerHTML = " Số tiền cần trả: " + a;
+      document.getElementById('result1').innerHTML = " Bạn đang ở bậc 3"
+    }
+       else if (ld <= 300) {
+      a = (50 * 1600) + (50 * 1700) + (100 * 2000) + (ld - 200) * 2500
+      document.getElementById('result').innerHTML = " Số tiền cần trả: " + a;
+      document.getElementById('result1').innerHTML = " Bạn đang ở bậc 4"
+    }
+      else if (ld>300 && ld <=400) {
+      a = (50 * 1600) + (50 * 1700) + (100 * 2000) + (100 * 2500) + (ld - 300) * 2800
+      document.getElementById('result').innerHTML = " Số tiền cần trả: " + a;
+      document.getElementById('result1').innerHTML = " Bạn đang ở bậc 5"
+    }
+     else {
+      a = ((50 * 1600) + (50 * 1700) + (100 * 2000) + (100 * 2500) + (100 * 2800) + (ld - 400) * 2900)
+      document.getElementById('result').innerHTML = " Số tiền cần trả: " + a;
+      document.getElementById('result1').innerHTML = " Bạn đang ở bậc 6"
+    }
+  }
+</script>
 </body>
 </html>

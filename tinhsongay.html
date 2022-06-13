@@ -2,9 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>tinhsongay</title>
 </head>
 <body>
-$END$
+<h2> Kiểm tra số ngày trong năm</h2>
+<label for = "month" ></label>
+<input type = "number" min = "1" max = "12" id = "month" placeholder = "nhập tháng" style = "width: 150px" >
+<button type = "button" onclick = "sum()" > Kiểm tra </button>
+<p id="result"></p>
+<script>
+  function sum() {
+    let month = +document.getElementById("month").value;
+    switch (month) {
+      case 1:
+      case 3:
+      case 5:
+      case 7:
+      case 8:
+      case 10:
+      case 12:
+        document.getElementById('result').innerHTML = "Tháng "+ month +  "số ngày bằng 31 ";
+        break;
+      case 4:
+      case 6:
+      case 9:
+      case 11:
+        document.getElementById('result').innerHTML ="Tháng "+ month + " số ngày bằng 30";
+        break;
+      case 2:
+        document.getElementById('result').innerHTML = "Tháng "+ month +"số ngày bằng 28 hoặc 29 ngày";
+        break;
+    }
+  }
+
+</script>
 </body>
 </html>
