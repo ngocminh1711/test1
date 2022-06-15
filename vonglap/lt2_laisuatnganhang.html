@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>laisuat_nganhang</title>
+</head>
+<body>
+<script>
+  let sotiengui = parseInt(prompt("Số tiền gửi: "));
+  let month = parseInt(prompt("Số tháng gửi: "));
+  let phantramlai = parseInt(prompt("Số lãi "));
+  let tongtien = 0;
+    for (let i = 0; i < month; i++) {
+      tienlai= (sotiengui* phantramlai)/100
+      tongtien = tienlai + sotiengui;
+      sotiengui = tongtien;
+    }
+    document.write("Số tiền nhận được =" +tongtien +"<br>");
+    document.write("Số tiền lãi " + tienlai);
+</script>
+</body>
+</html>

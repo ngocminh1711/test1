@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>tamgiac</title>
+</head>
+<body>
+<script>
+  for (i = 0; i < 5; i++){
+    for (j = 0; j < 5; j++){
+      if (j <= i) {
+        document.write('*');
+    }
+      else{
+        document.write('');
+      }
+  }
+    document.write('<br>');
+  }
+</script>
+<br>
+<script>
+  for (let i = 0; i < 5 ; i++ ) {
+    for ( let j = 0; j < 5; j++) {
+    if (i + j <= 4) {
+      document.write('*');
+    }
+    else {
+      document.write('');
+    }
+    }
+    document.write('<br>');
+  }
+</script>
+<br>
+ <script>
+   for (let i = 0; i < 5; i++){
+     for (let j = 0; j < 5; j++) {
+       if ( (i + j) >= 4 && (i + j) <= 8) {
+         document.write('*');
+       }
+       else {
+         document.write('&ensp;');
+       }
+     }
+     document.write('<br>');
+   }
+ </script>
+<br>
+<script>
+  for (let i = 0; i < 5; i++){
+    for (let j = 0; j < 5; j++) {
+      if ( i <=j ) {
+        document.write('*');
+      }
+      else {
+        document.write('&ensp;');
+      }
+    }
+    document.write('<br>');
+    }
+
+</script>
+
+</body>
+</html>
