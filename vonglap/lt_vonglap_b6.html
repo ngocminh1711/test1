@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lt_vonglap_b6</title>
+</head>
+<body>
+<script>
+  let number = parseInt(prompt("Nhập số: "));
+  let count = 0 , sum = 0
+  for (i = 0; count < number ; i++ ) {
+    if (i % 7 === 0){
+      document.write(i + " ");
+      sum += i
+      count ++
+    }
+  }
+document.write("<br>" + "Tổng: "+ sum);
+</script>
+</body>
+</html>

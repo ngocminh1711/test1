@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>fibanonacci</title>
+</head>
+<body>
+<script>
+  let number = prompt('enter a number')
+  count = 0
+  a = 0;
+  b = 1;
+  while (count < number) {
+      c = a + b;
+      a = b;
+      b = c;
+      count++
+    document.write(c);
+  }
+</script>
+</body>
+</html>
