@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<label  for="tudien"></label>
+<input type="text" id="tudien" placeholder="Nhấn từ muốn tìm" name="tudien" value="">
+<button type="button" id="btn" onclick="kq()">Dịch</button>
+<p id="result"></p>
+<script>
+
+  function kq() {
+    let tienganh = document.getElementById("tudien").value;
+    let english = ["apple", "orange", "lemon", "stawberry", "banana" , "carrot"];
+    let vietnamese = ["táo", "cam", "chanh", "dâu", "chuối", "cà rốt"];
+     if (english.indexOf(tienganh) !== -1 ) {
+     document.getElementById('result').innerHTML = vietnamese[english.indexOf(tienganh)];
+        }
+    else {
+      alert("Ko tim thay");
+    }
+  }
+    </script>
+</body>
+</html>
