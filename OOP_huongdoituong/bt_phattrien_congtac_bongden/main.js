@@ -2,7 +2,7 @@ let electriclamp = new Electriclamp (false);
 let switchbutton = new Switchbutton(electriclamp,false);
 switchbutton.connectToLamp();
 for (let i = 1; i <=20; i++) {
-  if (i % 2 !== 0) {
+  if (i % 2 == 0) {
     switchbutton.switchOn();
     console.log(switchbutton.switchOn());
     electriclamp.setStatus(true)
