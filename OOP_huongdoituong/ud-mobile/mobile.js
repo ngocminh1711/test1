@@ -5,22 +5,37 @@ class Mobile {
   draft;
   inbox;
   sent;
-  tinnhan;
-  constructor(id, name, battery, draft, inbox, sent, tinnhan) {
+  status;
+  constructor(id, name, battery, draft, inbox, sent,) {
     this.battery = battery;
     this.draft = draft;
     this.inbox = inbox;
     this.sent = sent;
-    this.tinnhan = tinnhan;
+    this.status = status;
   }
   chargeBattery() {
     if (battery < 100) {
       battery++;
     }
   }
-  sentMessage(tinnhan){
-
+  turnOn () {
+    this.status = true;
+    return this.status;
+  }
+  turnOff () {
+    this.status = false;
+    return this.status;
+  }
+  checkStatus () {
+    if (this.status) {
+      return "Turn On"
     }
+    else {
+      return "Turn Off"
+    }
+  }
+
+
 }
 
 
