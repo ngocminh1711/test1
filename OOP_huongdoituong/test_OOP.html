@@ -5,20 +5,56 @@
   <title>Title</title>
 </head>
 <body>
+<p id="result"></p>
 <script>
-  let circle = function (radius) {
-    this.getRadius = function(){
-      return radius;
+
+  class ElectricLamp{
+    constructor(status) {
+      this.status = status;
     }
-    this.getArea = function() {
-      Area = Math.PI * radius * radius
-      return Area;
+    getStatus(){
+      return this.status;
     }
   }
-  let Circle = new circle (prompt("Nhập bán kính: "));
-  let radius = Circle.getRadius();
-  let area = Circle.getArea();
-  alert("Bán kính: "+ radius + " và có diện tích bằng " + area);
+
+  class SwitchButton{
+    constructor(lamp, status) {
+      this.status = status;
+      this.lamp = lamp;
+    }
+    getLamp(){
+      return this.lamp;
+    }
+
+    setLamp(lamp){
+      this.lamp = lamp;
+    }
+
+    connectToLamp(Electriclamp){
+      return this.lamp = Electriclamp;
+    }
+
+    switchOff(){
+      this.lamp.status = false;
+      return this.status = false;
+    }
+
+    switchOn(){
+      this.lamp.status = true;
+      return this.status = true;
+    }
+  }
+
+
+  let electricLamp_1 = new ElectricLamp(false);
+
+  let switchButton_1 = new SwitchButton(electricLamp_1,false); // kết nối giữa  công tắc 1 và đèn 1
+
+  console.log(switchButton_1.switchOn());
+  console.log(electricLamp_1.getStatus());
+  console.log(switchButton_1.switchOff());
+  console.log(electricLamp_1.getStatus());
+
 </script>
 </body>
 </html>
