@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>feet_meter_converter</title>
+</head>
+<body>
+<script>
+
+  FeettoMeters ();
+  MeterstoFeet ();
+  function FeettoMeters (feet) {
+    let meters = 0.305 * feet;
+    return meters;
+  }
+  function MeterstoFeet (meters) {
+   let feet = 3.279* meters;
+    return feet;
+  }
+  let feet = prompt("Nhập feet: ");
+  document.write (feet +" feet bằng " + FeettoMeters(feet) + " meters");
+  document.write ("<br>");
+  let meters = prompt("Nhập meters ");
+  document.write (meters + " meters bằng " + MeterstoFeet(meters) + " feet");
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>find_min_value</title>
+</head>
+<body>
+<script>
+  /*
+    function minArray(array) {
+      let min = array[0];
+      for (let i = 0; i < array.length; i++) {
+        if (array[i] < min) {
+          min = array[i]
+        }
+      }
+      return min;
+    }
+    let array1 = [1, 2, 3, 4, 5]
+    let min = minArray(array1);
+    alert(min);
+   */
+  function minArray(array) {
+    if (array.length == 0)
+      return -1;
+    let min = array[0];
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] < min) {
+        min = minArray(array[i]);
+      }
+    }
+    return min;
+  }
+  let array1 =[];
+  let min = minArray(array1);
+  alert(min);
+</script>
+
+</body>
+</html>

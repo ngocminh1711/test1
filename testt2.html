@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+  // function Apple(type) {
+  //   this.type = type;
+  //   this.color = "red";
+    //this.getInfo = function() {
+    //return this.color + ' ' + this.type + ' apple'; } => khai báo bằng hàm
+  }
+  // Apple.prototype.getInfo = function() {
+  //   return this.color + ' ' + this.type + ' apple';
+  // }; => khai báo bằng thuộc tính prototype
+
+<script>
+  let apple = {
+    type: "manintosh",
+    color : "red",
+    getInfo: function() {
+      return this.color + ' ' + this.type + ' apple ';
+    }
+  }
+  apple.color = "reddish";
+  alert (apple.getInfo());
+</script>
+</body>
+</html>
+

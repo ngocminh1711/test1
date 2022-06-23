@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Temperature Converter</title>
+</head>
+<body> <input type="number" name="total" id="number"
+                  oninput="enter()" onclick="sum()">
+<br>
+<p id ="result">Kết quả:</p>
+<script>
+function sum(valNum) {
+  valNum = parseFloat(valNum);
+  result = (valNum +1)
+  return result;
+}
+function enter(){
+  let input = document.getElementById("number").value;
+  let result = convert(input);
+  document.getElementById("result").innerHTML = result;
+}
+</script>
+</body>
+
+</html>

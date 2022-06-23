@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>bai6</title>
+</head>
+<body>
+<script>
+  function checkNumber(a) {
+    if (Number.isInteger(a) && a > 0 ) {
+      a = a.toString();
+      return a.split("").reverse().join("");
+    }
+    else {
+      return false;
+    }
+    }
+  let a = prompt("Enter number num1: ");
+   document.write(checkNumber(a));
+
+
+  </script>
+
+
+</body>
+</html>

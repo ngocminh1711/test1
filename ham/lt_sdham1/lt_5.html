@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lt_bai5</title>
+</head>
+<body>
+<script>
+  let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+  let star2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+  let star = prompt("Enter Star'name: ");
+  searchStarname(star);
+  function searchStarname(star) {
+    let x = star1.indexOf(star);
+    if (x === -1) {
+      return x;
+    alert("Can't find'")}
+    else {
+      document.write(star2[x]);
+      return x;
+    }
+  }
+
+</script>
+
+</body>
+</html>

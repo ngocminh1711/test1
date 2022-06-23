@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>bai2</title>
+</head>
+<body>
+<script>
+  //S là diện tích , R bán kính, C là chu vi
+  function areaCircle(R) {
+    let S = Math.pow(2, R) * 3.14;
+    return S;
+  }
+
+  function perimeterCircle(R) {
+    let C = 2 * R * 3.14;
+    return C;
+  }
+
+  let R = Number(prompt("Enter radius: "));
+
+  alert("AreaCircle = " + areaCircle(R));
+  alert("perimeterCircle = " + perimeterCircle(R));
+</script>
+
+</body>
+</html>
