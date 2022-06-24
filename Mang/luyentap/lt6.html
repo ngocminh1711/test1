@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>luyentap6</title>
+</head>
+<body>
+<script>
+function findV(){
+  let array = [];
+  let flag = false;
+  let V = Number(prompt("Enter number V: "));
+  for (let i = 0; i < 10; i++) {
+    array[i] = Number(prompt("Enter your number: "+ "<br>"));
+    if (array[i] === V) {
+      flag = true;
+    }
+  }
+  document.write('Mảng = [' + array +']' );
+  if (flag === true) {
+    document.write('V is in the array ');
+  }
+    else {
+      document.write('V is not the array ');
+    }
+}
+findV();
+</script>
+
+</body>
+</html>

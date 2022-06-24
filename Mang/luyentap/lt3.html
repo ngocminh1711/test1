@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>lt_2</title>
+  <title>luyentap3</title>
 </head>
 <body>
 <script>
-
-
   function maxElement(array){
     let max =  array[0];
     let max_index= 0;
@@ -20,10 +18,19 @@
     console.log("max= ",max);
     console.log("max_index= ",max_index);
   }
-
+  function average(array) {
+    let sum = 0;
+   for (let a of array) {
+     sum += a;
+   }
+   let average = sum / array.length;
+   console.log("average= ",average);
+   console.log("sum = ",sum);
+  }
   let num = [5, 4, 7, 2, 8, 7, 3];
-
+  average(num);
   maxElement(num);
+
 </script>
 </body>
 </html>

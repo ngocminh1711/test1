@@ -16,5 +16,4 @@ while (apple.isEmpty() !== true) {
   document.write(apple.getWeight() + " đơn vị " + "<br>");
   document.write("Cân nặng của Eva: " + eva.getWeight() + " đơn vị " + "<br>");
   document.write("<br>");
-
 }

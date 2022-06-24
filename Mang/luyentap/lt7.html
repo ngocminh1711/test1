@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>luyentap7</title>
+</head>
+<body>
+<script>
+  function findV() {
+    let array = [];
+    let newarray = [];
+    let flag = false;
+    let V = Number(prompt("Enter number V: "));
+    for (let i = 0; i < 10; i++) {
+      array[i] = Number(prompt("Enter your number: " + "<br>"));
+      if (array[i] === V) {
+        flag = true;
+      } else if (array[i] !== V) {
+        newarray.push(array[i]);
+        flag = false;
+      }
+    }
+    document.write('Mảng = [' + array + ']' +'<br>');
+    if (flag === false) {
+      document.write('Đã xóa phần tử V, newarray=  [' + newarray + ']');
+    }
+  }
+  findV();
+</script>
+</body>
+</html>
