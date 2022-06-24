@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>luyentap3</title>
+</head>
+<body>
+<script>
+  function countNumtext() {
+    let array = [2, "Hello", 10, "n",22,"love",1];
+    let count = 0;
+    document.write("Mảng gồm = ["+array+"]<br>");
+    for (let i=0; i<array.length; i++){
+      if (array[i] %2 === 0 ||array[i] %2 === 1)
+      {
+        count ++;
+      }
+    }
+    document.write("Các ký tự số trong mảng là "+count+" số<br>");
+  }
+  countNumtext();
+</script>
+</body>
+</html>

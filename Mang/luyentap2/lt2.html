@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>luyentap2</title>
+</head>
+<body>
+<script>
+  let array = [1,5,"a","c","d",6,7,"z","w",10,"213"];
+  let temp = 0;
+  document.write("Mảng = ["+array+"]<br>")
+  for (let i=0; i <Math.floor((array.length)/2);i++){
+    for (let j = Math.ceil((array.length)/2); j<(array.length);j++){
+      temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+  }
+  document.write("Mảng đổi chiều = ["+array+"]");
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>luyentap6</title>
+</head>
+<body>
+<script>
+  function findCharacter() {
+    let array = new Array(prompt("Enter a string: "));
+    let arrayReplace = [];
+
+    document.write("Mảng gồm [" + array + "]<br>")
+    for (let i = 0; i < array.length; i++) {
+      for (let j = 0; j < array[i].length; j++) {
+        if (array[i][j] === "-") {
+          array[i][j] = "_"
+          arrayReplace.push("_")
+        } else {
+          arrayReplace.push(array[i][j])
+        }
+      }
+    }
+    document.write("Mảng sửa gồm [" + arrayReplace.join("") + "]<br>")
+  }
+
+  findCharacter();
+</script>
+</body>
+</html>

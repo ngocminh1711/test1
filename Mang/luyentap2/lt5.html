@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>luyentap5</title>
+</head>
+<body>
+<script>
+  function checkString() {
+    let string1 = prompt("Enter your string 1");
+    let string2 = prompt("Nhập your string 2");
+    let flag = true
+    document.write("Chuỗi 1 : " + string1 + " <br>" + "Chuỗi 2 : " + string2 + " <br>")
+    if (string1.length !== string2.length) {
+      document.write("2 chuỗi không giống nhau<br>");
+    } else {
+      for (let i = 0; i < string1.length; i++) {
+        for (let j = 0; j < string2.length; j++) {
+          if (string1[i] === string2[j]) {
+            flag = true;
+          }
+          else {
+            flag = false;
+          }
+        }
+      }
+      if (flag === false) {
+        document.write("2 chuỗi không giống nhau<br>")
+      } else {
+        document.write("2 chuỗi giống nhau<br>")
+      }
+    }
+  }
+  checkString();
+</script>
+</body>
+</html>
