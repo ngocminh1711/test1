@@ -11,12 +11,12 @@
 <script>
 function sum(valNum) {
   valNum = parseFloat(valNum);
-  result = (valNum +1)
+  result = (valNum-32) / 1.8;
   return result;
 }
 function enter(){
   let input = document.getElementById("number").value;
-  let result = convert(input);
+  let result = sum(input);
   document.getElementById("result").innerHTML = result;
 }
 </script>
