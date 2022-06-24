@@ -30,12 +30,4 @@ class Rectangle {
     moveBot(){
       this.y += 5;
     }
-    if (pressCtrl) {
-      while (this.x>0 && this.y >0){
-        this.x ++;
-        this.y ++;
-      }
-    }
-
-
 }
